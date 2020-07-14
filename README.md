@@ -1,4 +1,9 @@
-### Hi there 👋
+## DEV blog
+
+I blog on [DEV](http://dev.to/). Check out my most recent post:
+
+<!-- dev -->
+<!-- devend -->
 
 <!--
 **greyhoundforty/greyhoundforty** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
