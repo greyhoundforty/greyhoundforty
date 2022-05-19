@@ -1,9 +1,10 @@
-## Social
+# About
 
-I blog on [DEV](http://dev.to/). Check out my most recent post:
+My name is Ryan Tiffany:
 
-<!-- dev -->
-[Deploying IBM Cloud infrastructure using Terraform and Gitlab](https://dev.to/greyhoundforty/deploying-ibm-cloud-infrastructure-using-terraform-and-gitlab-1bnm)
-<!-- devend -->
+- I’m currently working at IBM Cloud :cloud:
+- I dabble in Kubernetes, Terraform, Python, Ansible, and anything else shiny that passes by
+- I don't tweet much, but if you want to follow [me][twitter] <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter-square.svg" width="50" height="50"> 
+- I own way too many domains
 
-- 🔭 I’m currently working on IBM Cloud
+[twitter]: https://twitter.com/ryantiffany
