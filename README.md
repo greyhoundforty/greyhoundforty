@@ -1,10 +1,9 @@
-### Hello there
+# Ryan Tiffany (greyhoundforty)
 
-My name is Ryan Tiffany:
+- I'm a Cloud Design Engineer with IBM, specializing in IaC, DevOps, and all things CLI. 
+- I have 5 kids, 2 cats, and way too many domain names.
+- I occasionally haunt [Twitter](https://twitter.com/sh10rbital)
 
-- I’m currently working at IBM Cloud ☁️
-- I own way too many domains ⚓ 
-- I dabble in Kubernetes, Terraform, Python, Ansible, and anything else shiny that passes by 💻
-- I don't tweet much, but if you like random wrestling and tech related retweets you can follow me on [twitter](https://twitter.com/ryantiffany) 💬  
+ 
 
 
