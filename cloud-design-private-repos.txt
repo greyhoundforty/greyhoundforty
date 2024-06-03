@@ -1,0 +1,6 @@
+.trunk
+codespace-test
+best-favorite-start
+IBM-Cloud-Code-Engine-Testing
+gitbook-guides
+sdd
