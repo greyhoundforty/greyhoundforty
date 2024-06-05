@@ -10,13 +10,12 @@ env:
     GH_TOKEN: ${{ secrets.GH_BACKUP_TOKEN }}
 jobs:
   back-up:
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
 
     strategy:
       matrix:
         public_repos:
           [
-            "https://github.com/greyhoundforty/greyhoundforty.git",
             "https://github.com/greyhoundforty/ibmcloud-terraform-vpc-template-repo.git",
             "https://github.com/greyhoundforty/ryantiffany-dot-com-landing.git",
             "https://github.com/greyhoundforty/gh40-net.git",
