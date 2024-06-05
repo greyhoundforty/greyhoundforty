@@ -23,45 +23,21 @@ jobs:
             "https://github.com/greyhoundforty/ic-ce-action-test-repo.git",
             "https://github.com/greyhoundforty/gh-action-ibm-packer.git",
             "https://github.com/greyhoundforty/prjkt.git",
-            "https://github.com/greyhoundforty/IBMCloud-Terraform-Examples.git",
+            "https://github.com/greyhoundforty/ibmcloud-vpc-streamlit.git",
             "https://github.com/greyhoundforty/ibmcloud-devcontainer.git",
-            "https://github.com/greyhoundforty/terraform-ibm-awx.git",
             "https://github.com/greyhoundforty/rt-dev.git",
-            "https://github.com/greyhoundforty/github-action-ibmcloud-vpc-packer",
-            "https://github.com/greyhoundforty/greyhoundforty.github.io",
-            "https://github.com/greyhoundforty/IBM-Cloud-Ansible",
-            "https://github.com/greyhoundforty/LunchSessions",
-            "https://github.com/greyhoundforty/cloud-shell-scripts",
-            "https://github.com/greyhoundforty/rtdev-lab-terraform",
-            "https://github.com/greyhoundforty/rtshell-base",
-            "https://github.com/greyhoundforty/rtshell",
-            "https://github.com/greyhoundforty/postman-example-repo",
-            "https://github.com/greyhoundforty/katacoda-scenarios",
-            "https://github.com/greyhoundforty/ibm-tf-backend-action-test",
-            "https://github.com/greyhoundforty/checkpoint-iaas-mgmt-ibm-vpc",
-            "https://github.com/greyhoundforty/looking-glass-dev",
-            "https://github.com/greyhoundforty/simple-tekton-toolchain",
-            "https://github.com/greyhoundforty/traefik-vpc-frontend",
-            "https://github.com/greyhoundforty/schematics-pipeline-ansible-example",
+            "https://github.com/greyhoundforty/github-action-ibmcloud-vpc-packer.git",
+            "https://github.com/greyhoundforty/greyhoundforty.github.io.git",
+            "https://github.com/greyhoundforty/ce-spotify-python.git",
+            "https://github.com/cloud-design-dev/ibmcloud-vpc-awx.git",
+            "https://github.com/cloud-design-dev/microk8s-ibmcloud-vpc.git",
+            "https://github.com/cloud-design-dev/ibmcloud-python-template.git",
+            "https://github.com/cloud-design-dev/ibmcloud-python-template.git",
+            "https://github.com/cloud-design-dev/ibmcloud-ce-simple-app.git",
+            "https://github.com/cloud-design-dev/ibmcloud-code-engine-github-action.git",
+            "https://github.com/cloud-design-dev/ibmcloud-code-engine-demos.git",
+            "https://github.com/cloud-design-dev/gh-webhook-function.git",
           ]
-        # work_repos:
-        #     [
-        #       "https://github.com/cicd-excellence/app.git",
-        #       "https://github.com/cicd-excellence/infra.git",
-        #       "https://github.com/larose/cargo.git",
-        #       "https://github.com/larose/conjugueur.git",
-        #       "https://github.com/larose/eef.git",
-        #       "https://github.com/larose/ena.git",
-        #       "https://github.com/larose/git-backup-demo.git",
-        #       "https://github.com/larose/pretty-printer.git",
-        #       "https://github.com/larose/tsp.git",
-        #       "https://github.com/larose/utt.git",
-        #       "https://github.com/larose/verbes.git",
-        #       "https://github.com/larose/yarn-monorepo-change-based-testing-demo.git",
-        #       "https://github.com/larose/wiki.git",
-        #     ]
-  
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -74,7 +50,7 @@ jobs:
       - name: Install @larose/git-backup
         run: npm install -g @larose/git-backup
 
-      - name: Back up personal public repositories
+      - name: Back up ${{ matrix.public_repos }} repo 
         run: |
           git-backup snapshot \
             --repo ${{ matrix.public_repos }} \
