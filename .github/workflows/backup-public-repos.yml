@@ -36,11 +36,6 @@ jobs:
             "https://github.com/cloud-design-dev/ibmcloud-code-engine-demos.git",
             "https://github.com/cloud-design-dev/gh-webhook-function.git",
           ]
-        private_repos:
-          [
-            "https://${{ env.GH_TOKEN }}@github.comgreyhoundforty/ce-spotify-python.git",
-            "https://${{ env.GH_TOKEN }}@github.com/greyhoundforty/ibmcloud-vpc-streamlit.git",
-          ]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
