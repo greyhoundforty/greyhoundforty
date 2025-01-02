@@ -2,7 +2,8 @@ name: Back up Public Repositories
 
 on:
   schedule:
-    - cron: "45 1 * * 1,4" 
+    - cron: "45 1 * * 1,4"
+  workflow_dispatch:
 
 env:
     GH_TOKEN: ${{ secrets.GH_BACKUP_TOKEN }}
